@@ -1,0 +1,8 @@
+﻿<Window x:Class="Twitter_Bio_Scrapper.RateLimitsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Rate Limits" Height="300" Width="300" Closing="Window_Closing">
+    <Grid>
+        <RichTextBox Name="TemporaryTextBox" Margin="3"></RichTextBox>
+    </Grid>
+</Window>

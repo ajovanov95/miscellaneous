@@ -1,0 +1,30 @@
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\MainWindow.baml
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\RateLimitsWindow.baml
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\MainWindow.g.cs
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\RateLimitsWindow.g.cs
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\App.g.cs
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper_MarkupCompile.cache
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.g.resources
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\Twitter_Bio_Scrapper.Properties.Resources.resources
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.csproj.GenerateResource.Cache
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Release\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Release\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Release\Newtonsoft.Json.dll
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Release\Newtonsoft.Json.pdb
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Release\Newtonsoft.Json.xml
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\bin\Release\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\bin\Release\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\bin\Release\Newtonsoft.Json.dll
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\MainWindow.baml
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\RateLimitsWindow.baml
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\MainWindow.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\RateLimitsWindow.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\App.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper_MarkupCompile.cache
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.g.resources
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\Twitter_Bio_Scrapper.Properties.Resources.resources
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Release\Twitter Bio Scrapper.csproj.GenerateResource.Cache

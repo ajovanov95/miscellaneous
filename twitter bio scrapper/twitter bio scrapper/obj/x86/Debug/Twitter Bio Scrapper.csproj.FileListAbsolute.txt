@@ -1,0 +1,32 @@
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\MainWindow.baml
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\App.g.cs
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper_MarkupCompile.cache
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.g.resources
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter_Bio_Scrapper.Properties.Resources.resources
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.csproj.GenerateResource.Cache
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Debug\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Debug\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Debug\Newtonsoft.Json.pdb
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\bin\Debug\Newtonsoft.Json.xml
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\RateLimitsWindow.baml
+C:\Users\Aleksandar\AppData\Local\Temporary Projects\Twitter Bio Scrapper\obj\x86\Debug\RateLimitsWindow.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.csprojResolveAssemblyReference.cache
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\MainWindow.baml
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\RateLimitsWindow.baml
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\MainWindow.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\RateLimitsWindow.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\App.g.cs
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper_MarkupCompile.cache
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.g.resources
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter_Bio_Scrapper.Properties.Resources.resources
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.csproj.GenerateResource.Cache
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\bin\Debug\Twitter Bio Scrapper.exe
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\bin\Debug\Twitter Bio Scrapper.pdb
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\bin\Debug\Newtonsoft.Json.dll
+C:\Users\Aleksandar\documents\visual studio 2010\Projects\Twitter Bio Scrapper\Twitter Bio Scrapper\obj\x86\Debug\Twitter Bio Scrapper.pdb

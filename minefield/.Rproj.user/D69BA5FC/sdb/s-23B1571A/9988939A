@@ -1,0 +1,23 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1493131229481.000,
+    "dirty" : false,
+    "encoding" : "",
+    "folds" : "",
+    "hash" : "0",
+    "id" : "9988939A",
+    "lastKnownWriteTime" : 0,
+    "last_content_update" : 1493131229481,
+    "path" : null,
+    "project_path" : null,
+    "properties" : {
+        "createProfile" : true,
+        "name" : "Profile1",
+        "path" : "/home/aleksandar/Projects/minefield/.Rproj.user/D69BA5FC/profiles-cache/file43c54312135c.Rprof"
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_prof"
+}

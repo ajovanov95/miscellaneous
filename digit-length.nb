@@ -1,0 +1,206 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 10.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       158,          7]
+NotebookDataLength[      6448,        197]
+NotebookOptionsPosition[      5767,        168]
+NotebookOutlinePosition[      6100,        183]
+CellTagsIndexPosition[      6057,        180]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[{
+ RowBox[{
+  RowBox[{"nums", " ", "=", " ", 
+   RowBox[{"{", 
+    RowBox[{
+    "1", ",", " ", "10", ",", " ", "30", ",", " ", "70", ",", " ", "120", ",",
+      " ", "150", ",", " ", "250", ",", " ", "600", ",", " ", "1200", ",", 
+     " ", "3000", ",", " ", "7000", ",", " ", "11000", ",", " ", "25000", ",",
+      " ", "100000", ",", " ", "350000", ",", " ", "730000", ",", " ", 
+     "1200000", ",", " ", "3000000", ",", " ", "10000000", ",", " ", 
+     "7000000", ",", " ", "45000000", ",", " ", "678000000", ",", " ", 
+     "1300000000", ",", " ", "20000000000", ",", " ", "100000000000"}], " ", 
+    "}"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"xs", " ", ":=", " ", 
+  RowBox[{"ParallelMap", "[", 
+   RowBox[{
+    RowBox[{
+     RowBox[{"Length", "[", 
+      RowBox[{"IntegerDigits", "[", 
+       RowBox[{"#", ",", " ", "2"}], "]"}], "]"}], " ", "&"}], ",", " ", 
+    "nums"}], "]"}]}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"ys", " ", ":=", " ", 
+   RowBox[{"ParallelMap", "[", 
+    RowBox[{
+     RowBox[{
+      RowBox[{"Length", "[", 
+       RowBox[{"IntegerDigits", "[", 
+        RowBox[{"#", ",", " ", "10"}], "]"}], "]"}], " ", "&"}], ",", " ", 
+     "nums"}], "]"}]}], "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"pts", " ", ":=", " ", 
+   RowBox[{"Transpose", "[", 
+    RowBox[{"{", 
+     RowBox[{"ys", ",", " ", "xs"}], "}"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{
+  RowBox[{"line", " ", "=", " ", 
+   RowBox[{"LinearModelFit", "[", 
+    RowBox[{"pts", ",", " ", "x", ",", " ", "x"}], "]"}]}], 
+  "\[IndentingNewLine]"}], "\[IndentingNewLine]", 
+ RowBox[{"Show", "[", 
+  RowBox[{
+   RowBox[{"ListPlot", "[", 
+    RowBox[{"pts", ",", " ", 
+     RowBox[{"PlotRange", "\[Rule]", "Full"}]}], "]"}], ",", " ", 
+   RowBox[{"Plot", "[", 
+    RowBox[{
+     RowBox[{"line", "[", "x", "]"}], ",", " ", 
+     RowBox[{"{", 
+      RowBox[{"x", ",", " ", "0", ",", " ", "40"}], "}"}]}], "]"}]}], 
+  "]"}]}], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "10", ",", "30", ",", "70", ",", "120", ",", "150", ",", "250", 
+   ",", "600", ",", "1200", ",", "3000", ",", "7000", ",", "11000", ",", 
+   "25000", ",", "100000", ",", "350000", ",", "730000", ",", "1200000", ",", 
+   "3000000", ",", "10000000", ",", "7000000", ",", "45000000", ",", 
+   "678000000", ",", "1300000000", ",", "20000000000", ",", "100000000000"}], 
+  "}"}]], "Output"],
+
+Cell[BoxData[
+ TagBox[
+  RowBox[{"FittedModel", "[", 
+   TagBox[
+    PanelBox[
+     TagBox[
+      RowBox[{
+       RowBox[{"-", "1.48319641523525`"}], "+", 
+       RowBox[{"3.3121732636295738`", " ", "x"}]}],
+      Short[#, 2]& ],
+     FrameMargins->5],
+    Editable -> False], "]"}],
+  InterpretTemplate[
+  FittedModel[{
+    "Linear", {-1.48319641523525, 
+     3.3121732636295738`}, {{$CellContext`x}, {1, $CellContext`x}}, {0, 
+     0}}, {{1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 1., 
+    1., 1., 1., 1., 1., 1., 1., 1., 1.}}, {{1, 1}, {2, 4}, {2, 5}, {2, 7}, {3,
+     7}, {3, 8}, {3, 8}, {3, 10}, {4, 11}, {4, 12}, {4, 13}, {5, 14}, {5, 
+    15}, {6, 17}, {6, 19}, {6, 20}, {7, 21}, {7, 22}, {8, 24}, {7, 23}, {8, 
+    26}, {9, 30}, {10, 31}, {11, 35}, {12, 37}}, CompressedData["
+1:eJxTTMoPSmViYGCQBGIQDQEf7LHTDA6k8Tko5AuQyBchwJcgkS9DgK9AorwS
+Gl8Fja+GxtdwAAA6NSh1
+    "], 
+    Function[Null, 
+     Internal`LocalizedBlock[{$CellContext`x}, #], {HoldAll}]]& ],
+  Editable->False,
+  SelectWithContents->True,
+  Selectable->True]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"line", "[", "\"\<CorrelationMatrix\>\"", "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+   RowBox[{"{", 
+    RowBox[{"1.`", ",", 
+     RowBox[{"-", "0.8834544715369822`"}]}], "}"}], ",", 
+   RowBox[{"{", 
+    RowBox[{
+     RowBox[{"-", "0.8834544715369822`"}], ",", "1.`"}], "}"}]}], 
+  "}"}]], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"line", "[", "\"\<AdjustedRSquared\>\"", "]"}]], "Input",
+ NumberMarks->False],
+
+Cell[BoxData["0.9878530652158756`"], "Output"]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "10", ",", "30", ",", "70", ",", "120", ",", "150", ",", "250", 
+   ",", "600", ",", "1200", ",", "3000", ",", "7000", ",", "11000", ",", 
+   "25000", ",", "100000", ",", "350000", ",", "730000", ",", "1200000", ",", 
+   "3000000", ",", "10000000", ",", "7000000", ",", "45000000", ",", 
+   "678000000", ",", "1300000000", ",", "20000000000", ",", "100000000000", 
+   ",", " ", "1000000000000", ",", "10000000000000", ",", "100000000000000"}],
+   "}"}]], "Input"],
+
+Cell[BoxData[
+ RowBox[{"{", 
+  RowBox[{
+  "1", ",", "10", ",", "30", ",", "70", ",", "120", ",", "150", ",", "250", 
+   ",", "600", ",", "1200", ",", "3000", ",", "7000", ",", "11000", ",", 
+   "25000", ",", "100000", ",", "350000", ",", "730000", ",", "1200000", ",", 
+   "3000000", ",", "10000000", ",", "7000000", ",", "45000000", ",", 
+   "678000000", ",", "1300000000", ",", "20000000000", ",", "100000000000", 
+   ",", "1000000000000", ",", "10000000000000", ",", "100000000000000"}], 
+  "}"}]], "Output"]
+}, Open  ]]
+},
+WindowSize->{1366, 744},
+WindowMargins->{{0, Automatic}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (June 27, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[580, 22, 2015, 51, 253, "Input"],
+Cell[2598, 75, 438, 8, 55, "Output"],
+Cell[3039, 85, 1061, 28, 76, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4137, 118, 102, 2, 32, "Input"],
+Cell[4242, 122, 256, 9, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4535, 136, 101, 2, 32, "Input"],
+Cell[4639, 140, 46, 0, 32, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[4722, 145, 515, 9, 55, InheritFromParent],
+Cell[5240, 156, 511, 9, 55, "Output"]
+}, Open  ]]
+}
+]
+*)
+
+(* End of internal cache information *)

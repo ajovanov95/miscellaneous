@@ -1,0 +1,98 @@
+1. CPU populates the task queue with randomly selected task from every part of the
+search space. Search space part could be defined as a partition in geometric cube-like sense.
+2. CPU starts n GPU parallel cores (task list is also of length n)
+3. Each GPU core calculates some value function for its task.
+4. Control gets back to CPU.
+4.1 If the most valuable task's value is below some threshold or the number of iterations exceeds a maximum preset value,
+then return the most valuable task. Otherwise goto 4.2.
+4.2. CPU takes the alpha% most valuable tasks and keeps them.
+The other (100-alpha)% are selected randomly (uniformly) from search space parts that do not contain
+the kept valuable tasks(thus ensuring that we do not get stuck in a local minimum and forcing exploration)
+5. Change alpha to follow some exploration strategy (like e-greedy in RL). Goto 2
+
+Example usage of the algorithm:
+  For finding the fitting rectangle for a barcode in an image an algorithm where the reward/value function is
+  the complement of histogram distance between histogram under (x,y,x+w,y+h) rectangle and the model histogram.
+  Under complement I mean MAX_INT - Distance.
+  The results here will likely depend on the quality of the distance metric.
+  Light transform invariance is a must for the chosen distance metric.
+
+  Simple policy might be alpha = i / M
+  Search space dimensions are: w * h * w * h = w^2 * h^2
+
+Algorithm complexity:
+- n : number of CUDA cores that can work in parallel at the same time / number of tasks
+- d1, d2, ..., dk - dimensions of the k-dimensional search space.
+- r : size of partition
+- t : worst-case complexity of the value calculation function
+- p : steps needed to calculate the new value of alpha from policy
+- M : maximum allowed number of iterations
+
+r = (d1 * d2 * ... * dk) / n
+
+t = F(d1, d2, ..., dk) (in worst case)
+
+Parallel part: O(t)
+Serial part: [alpha * Sort(n*log(n)) + (1 - alpha) * Sample(n) + O(p) ]
+Main loop: M * (Parallel part + Serial part + PolicyUpdate)
+Complexity: = O(M * (t + n * log(n) + p))
+
+Complexity for histogram searching:
+  t = F(w, h, w, h) => O(t) = O(w * h)
+  p = 1
+  => O(M * (w * h + n * log(n) + p))
+  Assuming n = 96, M = 10, w = 400, h = 300
+  => 25 * (400 * 300 + 96 * log(96) + 1) = 3,010,980 operacii
+  Znaci okolu 3,000,000 operacii ke se izvrsat na CPU vo najlos slucaj
+  pred da zavrsi algoritmot. Ova lici kako da bi mozel da zavrsi
+  pod edna sekunda vo opst slucaj.
+
+*Pseudo code for parallel search algorithm:*
+
+input: value function f, threshold T, alpha_policy policy
+
+tasks[i] = sample uniformly from search space part i
+alpha    = 1.0 / n // ensure at least one task gets kept after first iteration
+
+for i = 0 to M:
+  parallel_invoke (tasks, f) // takes t steps in worst case
+
+  if (exists task s.t task.value <= T)
+    return task
+
+  // These two take alpha * O(sort) + (1-alpha) * O(sample) steps
+  tasks1 = keep_valuable         (tasks, alpha)
+  tasks2 = encourage_exploration (tasks, 1 - alpha)
+
+  tasks  = join(tasks1, tasks2)
+
+  // This takes p steps
+  alpha = policy(alpha, i, M, T)
+
+// loop ends here
+return most valuable task
+
+// NB: Sorting the tasks on the CPU should be faster than having
+// a priority queue that is accessed concurently by CUDA cores.
+
+keep_valuable algorithm:
+  V <- alpha most valuable tasks
+
+  if full exploration variant (alpha <= 0.5 for example)
+    V[i] <- sample around search space part i with probability proprtional to V[i].value
+    // The main idea here is that we are never satisfied with what we got and instead we always look around the
+    // neighbours for potentionally better solutions.
+  else
+    return V
+
+encourage_exploration algorithm:
+  V <- (1-alpha) least valuable tasks
+  V[i] <- sample task in region i uniformly forall i
+  return V
+
+Algorithm strengths: Provides a mix between exploration and exploitation. Parallel.
+Algorithm weakness: If n is small then large search spaces won't be explored well enough.
+
+Extra thoughts:
+- How to partition a K-dimensional search space: ??
+- What about the quality of solutions?
