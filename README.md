@@ -13,6 +13,8 @@ twitter bio scrapper -> Windows WPF + C# application to gather twitter data.
 
 Utils lib (C++) -> maybe and either datatypes implemented in c++
 
+minefield -> statistical simulation over graphs done using R
+
 Files structure:
 
 digit-length.nb -> Wolfram Mathematica notebook that studies some statistical properties of numbers when viewed in different bases.
